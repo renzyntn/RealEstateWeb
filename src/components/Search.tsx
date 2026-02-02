@@ -1,26 +1,33 @@
 import imgSearch from "../assets/images/search/search-image.png";
-import iconImg1 from "../assets/images/search/3d-image1.png";
-import iconImg2 from "../assets/images/search/3d-image2.png";
-import iconImg3 from "../assets/images/search/3d-image3.png";
-import iconImg4 from "../assets/images/search/3d-image4.png";
+import searchData from "../data.json";
 
 function Search() {
+  const displayGrid = searchData.searchSection.map((data) => {
+    return (
+      <div className="flex flex-col justify-center items-center" key={data.id}>
+        <img src={data.link} alt={data.alt} className="w-30 md:w-50" />
+        <h3 className="text-white text-base md:text-lg font-montserrat font-medium lg:font-semibold">
+          {data.title}
+        </h3>
+      </div>
+    );
+  });
   return (
-    <section className="max-w-screen h-150">
+    <section className="max-w-screen h-150 md:h-200">
       <div className="w-full h-full relative flex justify-center">
         <img
           className="w-full h-full object-cover brightness-45"
           src={imgSearch}
           alt="Image Banner"
         />
-        <div className="absolute flex flex-col items-center justify-center px-4 py-6">
+        <div className="absolute flex flex-col items-center justify-center px-4 py-6 lg:py-12">
           <div className="flex justify-center items-center mb-6">
-            <h2 className="text-3xl text-center font-cinzel font-light text-white">
+            <h2 className="text-center font-cinzel font-light text-white text-3xl md:text-4xl">
               FIND YOUR DREAM HOME
             </h2>
           </div>
-          <div className="min-w-full flex justify-center items-center gap-1">
-            <label className="input input-md bg-white outline-none rounded-full shadow-lg/25">
+          <div className="min-w-full flex justify-center items-center gap-2">
+            <label className="lg:w-full input input-md lg:input-lg bg-white outline-none rounded-full shadow-lg/25">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,36 +50,13 @@ function Search() {
                 className="text-black font-sans"
               />
             </label>
-            <button className="btn btn-md rounded-full bg-black text-white font-light border-none">
+            <button className="btn btn-md lg:btn-lg rounded-full border-none bg-black text-white font-light">
               Search
             </button>
           </div>
         </div>
-        <div className="absolute w-full grid grid-cols-2 justify-items-center bottom-0 px-4 py-6 gap-2 text-center">
-          <div className="flex flex-col justify-center items-center">
-            <img src={iconImg1} alt="3D Image 1" className="w-30" />
-            <h3 className="text-white text-base font-montserrat font-medium">
-              Browse Available Properties
-            </h3>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <img src={iconImg2} alt="3D Image 1" className="w-30" />
-            <h3 className="text-white text-base font-montserrat font-medium">
-              Prime Locations Nearby
-            </h3>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <img src={iconImg3} alt="3D Image 1" className="w-30" />
-            <h3 className="text-white text-base font-montserrat font-medium">
-              Trusted Properties
-            </h3>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <img src={iconImg4} alt="3D Image 1" className="w-30" />
-            <h3 className="text-white text-base font-montserrat font-medium">
-              Best Market Prices
-            </h3>
-          </div>
+        <div className="absolute w-full grid grid-cols-2 justify-items-center bottom-0 px-4 py-6 lg:py-16 gap-2 text-center">
+          {displayGrid}
         </div>
       </div>
     </section>

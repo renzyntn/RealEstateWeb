@@ -5,15 +5,15 @@ import cardImage3 from "../assets/images/achievement/achievement-image3.png";
 function CardTestimonial() {
   return (
     <>
-      <div className="card w-full bg-base-white shadow-xl/20">
+      <div className="card w-full md:w-lg bg-base-white shadow-xl/20 md:odd:justify-self-start">
         <figure>
           <img src={cardImage1} alt="Card Image 1" />
         </figure>
         <div className="card-body space-y-2">
-          <h2 className="card-title text-xl">
+          <h2 className="card-title text-xl md:text-2xl">
             Top Residential Sales In The Last 5 Years
           </h2>
-          <p className="text-base text-justify">
+          <p className="text-base md:text-lg text-justify">
             We helped nearly 90 clients in 2021, and closed 28.5 million in
             sales! Our team works hard everyday to grow and learn, so that we
             may continue to excel in our market. Our clients deserve our best, &
@@ -21,26 +21,28 @@ function CardTestimonial() {
           </p>
         </div>
       </div>
-      <div className="card w-full bg-base-white shadow-xl/20">
+      <div className="card w-full md:w-lg bg-base-white shadow-xl/20 md:even:justify-self-end">
         <figure>
           <img src={cardImage2} alt="Card Image 2" />
         </figure>
         <div className="card-body space-y-2">
-          <h2 className="card-title text-xl">Don't Just List It...</h2>
-          <p className="text-base text-justify">
+          <h2 className="card-title text-xl md:text-2xl">
+            Don't Just List It...
+          </h2>
+          <p className="text-base md:text-lg text-justify">
             Get it SOLD! We exhaust every avenue to ensure our listings are at
             the fingertips of every possible buyer, getting you top dollar for
             your home.
           </p>
         </div>
       </div>
-      <div className="card w-full bg-base-white shadow-xl/20">
+      <div className="card w-full md:w-lg bg-base-white shadow-xl/20 md:odd:justify-self-start">
         <figure>
           <img src={cardImage3} alt="Card Image 3" />
         </figure>
         <div className="card-body space-y-2">
-          <h2 className="card-title text-xl">Guide to Buyers</h2>
-          <p className="text-base text-justify">
+          <h2 className="card-title text-xl md:text-2xl">Guide to Buyers</h2>
+          <p className="text-base md:text-lg text-justify">
             Nobody knows the market like we do. Enjoy having a pro at your
             service. Market analysis, upgrades lists, contractors on speed dial,
             & more!

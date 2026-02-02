@@ -1,35 +1,24 @@
 import Marquee from "react-fast-marquee";
-import partnerImg1 from "../assets/images/partner/partner-image1.png";
-import partnerImg2 from "../assets/images/partner/partner-image2.png";
-import partnerImg3 from "../assets/images/partner/partner-image3.png";
-import partnerImg4 from "../assets/images/partner/partner-image4.png";
+import marqueeData from "../data.json";
 
 function Partners() {
+  const displayMarquee = marqueeData.marqueeSection.map((data) => {
+    return (
+      <img
+        key={data.id}
+        src={data.link}
+        alt={data.alt}
+        className="w-20 md:w-25 lg:w-30 mx-5 md:mx-10 lg:mx-20"
+      />
+    );
+  });
+
   return (
     <section className="max-w-screen">
-      <div className="w-full flex justify-center items-center py-6">
-        <div className="flex w-full h-25 justify-center items-center">
-          <Marquee>
-            <img
-              src={partnerImg1}
-              alt={"Marquee image 1"}
-              className="w-20 mx-5"
-            />
-            <img
-              src={partnerImg2}
-              alt={"Marquee image 2"}
-              className="w-20 mx-5"
-            />
-            <img
-              src={partnerImg3}
-              alt={"Marquee image 3"}
-              className="w-20 mx-5"
-            />
-            <img
-              src={partnerImg4}
-              alt={"Marquee image 4"}
-              className="w-20 mx-5"
-            />
+      <div className="w-full md:h-70 py-6 lg:py-8">
+        <div className="flex w-full h-full justify-center items-center">
+          <Marquee speed={30} autoFill={true} className="h-full">
+            {displayMarquee}
           </Marquee>
         </div>
       </div>
