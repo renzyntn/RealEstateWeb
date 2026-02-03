@@ -20,7 +20,7 @@ function Hero() {
             className="w-full h-10 flex justify-center items-center bg-white rounded-full font-montserrat text-black"
             href="tel: (206) 919-6886"
           >
-            <span className="font-medium text-base">CALL NOW</span>
+            <span className="font-medium text-base md:text-lg">CALL NOW</span>
           </a>
           <div className="w-full grid grid-cols-2 justify-center items-center font-cinzel text-center">
             <div className="stat p-0 md:gap-2">
@@ -40,7 +40,10 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center gap-2">
+          <nav
+            className="w-full flex justify-center items-center gap-2"
+            aria-label="Social media links"
+          >
             <a
               href="https://www.facebook.com/MarciHomes/"
               target={"_blank"}
@@ -91,8 +94,8 @@ function Hero() {
                 ></path>
               </svg>
             </a>
-          </div>
-          <h2 className="font-cinzel font-medium text-xl">206-919-6886</h2>
+          </nav>
+          <p className="font-cinzel font-medium text-xl">206-919-6886</p>
         </div>
       </div>
     </section>
