@@ -5,11 +5,12 @@ import type { menuButtonType } from "@/@types/proptypes";
 function NavMenu({ menuButton, menuButtonClicked }: menuButtonType) {
   return createPortal(
     <div
-      className={`fixed inset-0 z-50 flex justify-center items-center px-4 py-6 bg-white transition-transform duration-300 ${menuButton ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed inset-0 z-50 flex justify-center items-center px-4 py-6 mt-20 bg-white transition-transform duration-300 ${menuButton ? "translate-x-0" : "-translate-x-full"}`}
     >
       <button
         className="absolute top-7 right-4 hover:cursor-pointer size-6"
         onClick={menuButtonClicked}
+        aria-label="Close"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
@@ -19,33 +20,43 @@ function NavMenu({ menuButton, menuButtonClicked }: menuButtonType) {
         </svg>
       </button>
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col justify-center items-center gap-8 font-montserrat text-lg md:text-xl">
+        <nav
+          className="flex flex-col justify-center items-center gap-8 font-montserrat text-lg md:text-xl"
+          aria-label="Main navigation"
+        >
           <Link
-            to="/home"
+            to="/"
             className="hover:font-medium border-b border-transparent hover:border-black"
+            onClick={menuButtonClicked}
           >
             HOME
           </Link>
           <Link
-            to="/"
+            to="/listings"
             className="hover:font-medium border-b border-transparent hover:border-black"
+            onClick={menuButtonClicked}
           >
             LISTINGS
           </Link>
           <Link
-            to="/"
+            to="/letsmove"
             className="hover:font-medium border-b border-transparent hover:border-black"
+            onClick={menuButtonClicked}
           >
             LET'S MOVE
           </Link>
           <Link
-            to="/"
+            to="/about"
             className="hover:font-medium border-b border-transparent hover:border-black"
+            onClick={menuButtonClicked}
           >
             ABOUT US
           </Link>
-        </div>
-        <div className="flex justify-center items-center gap-2">
+        </nav>
+        <nav
+          className="flex justify-center items-center gap-2"
+          aria-label="Social media links"
+        >
           <a
             href="https://www.facebook.com/MarciHomes/"
             target={"_blank"}
@@ -96,7 +107,7 @@ function NavMenu({ menuButton, menuButtonClicked }: menuButtonType) {
               ></path>
             </svg>
           </a>
-        </div>
+        </nav>
       </div>
     </div>,
     document.body,
