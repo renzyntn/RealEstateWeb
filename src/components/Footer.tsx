@@ -2,7 +2,10 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="max-w-screen px-4 py-6 lg:px-8 font-montserrat text-white bg-black">
-      <div className="w-full flex justify-center items-center gap-2">
+      <nav
+        className="w-full flex justify-center items-center gap-2"
+        aria-label="Social media links"
+      >
         <a
           href="https://www.facebook.com/MarciHomes/"
           target={"_blank"}
@@ -53,7 +56,7 @@ function Footer() {
             ></path>
           </svg>
         </a>
-      </div>
+      </nav>
       <div className="flex justify-center items-center mt-6">
         <p className="text-sm text-center font-normal">
           {`Copyright © ${currentYear} Marci Metzger Homes - All Rights Reserved`}
