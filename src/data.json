@@ -1,14 +1,54 @@
 {
-  "aboutSection": [
-    {
-      "id": 1,
-      "link": "src/assets/images/agent/agent-image.png",
-      "alt": "Marci Metzger Image",
-      "name": "Marci Metzger",
-      "title": "Real Estate Broker",
-      "description": "I’m Marci Metzger, a real estate broker with over 30 years of experience. In 2021, me and my team helped nearly 90 clients close deals totaling $28.5 million. My focus is on providing expert guidance and making the real estate process seamless for every client. Whether buying or selling, I’m dedicated to delivering successful outcomes with personalized service."
-    }
-  ],
+  "heroSection": {
+    "name": "MARCI METZGER – THE RIDGE REALTY GROUP",
+    "title": "Pahrump Realtor",
+    "calltitle": "CALL NOW",
+    "calllink": "tel: (206) 919-6886",
+    "calltext": "206-919-6886",
+    "countdata": [
+      {
+        "id": 1,
+        "titletop": "CLIENTS",
+        "titlebottom": "IN 2021",
+        "number": 89
+      },
+      {
+        "id": 2,
+        "titletop": "SALES",
+        "titlebottom": "IN TOTAL",
+        "number": 28.5
+      }
+    ],
+    "socials": [
+      {
+        "id": 1,
+        "link": "https://www.facebook.com/MarciHomes/",
+        "arialabel": "Facebook"
+      },
+      {
+        "id": 2,
+        "link": "https://www.linkedin.com/in/marci-metzger-30642496/",
+        "arialabel": "Linkedin"
+      },
+      {
+        "id": 3,
+        "link": "https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump",
+        "arialabel": "Yelp"
+      },
+      {
+        "id": 4,
+        "link": "https://wa.me/14259412560",
+        "arialabel": "Whatsapp"
+      }
+    ]
+  },
+  "aboutSection": {
+    "link": "src/assets/images/agent/agent-image.png",
+    "alt": "Marci Metzger Image",
+    "name": "Marci Metzger",
+    "title": "Real Estate Broker",
+    "description": "I’m Marci Metzger, a real estate broker with over 30 years of experience. In 2021, me and my team helped nearly 90 clients close deals totaling $28.5 million. My focus is on providing expert guidance and making the real estate process seamless for every client. Whether buying or selling, I’m dedicated to delivering successful outcomes with personalized service."
+  },
   "searchSection": [
     {
       "id": 1,
@@ -56,6 +96,43 @@
       "alt": "Card Image 3",
       "title": "Guide to Buyers",
       "description": "Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!"
+    }
+  ],
+  "carouselSection": [
+    {
+      "id": 1,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 1"
+    },
+    {
+      "id": 2,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 2"
+    },
+    {
+      "id": 3,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 3"
+    },
+    {
+      "id": 4,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 4"
+    },
+    {
+      "id": 5,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 5"
+    },
+    {
+      "id": 6,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 6"
+    },
+    {
+      "id": 7,
+      "link": "/src/assets/images/carousel/carousel-image1.png",
+      "alt": "Carousel Image 7"
     }
   ],
   "marqueeSection": [
