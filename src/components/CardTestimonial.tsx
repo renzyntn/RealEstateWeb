@@ -10,7 +10,7 @@ function CardTestimonial() {
         <figure>
           <img src={data.link} alt={data.alt} />
         </figure>
-        <div className="card-body space-y-2">
+        <div className="card-body">
           <h2 className="card-title text-xl md:text-2xl">{data.title}</h2>
           <p className="text-base md:text-lg text-justify">
             {data.description}
