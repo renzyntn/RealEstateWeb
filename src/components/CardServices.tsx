@@ -1,22 +1,17 @@
 import servicesData from "../data.json";
 
 function CardServices() {
-  const displayCard = servicesData.servicesSection.map((data, index) => {
+  const displayCard = servicesData.servicesSection.map((data) => {
     return (
-      <div
-        className={`card w-full md:w-lg bg-base-white shadow-xl/20 md:odd:justify-self-start ${index % 2 === 0 ? "md:odd:justify-self-start" : "md:even:justify-self-end"}`}
-        key={data.id}
-      >
-        <figure>
-          <img
-            src={data.link}
-            alt={data.alt}
-            className="md:w-lg md:h-91 object-cover"
-          />
-        </figure>
-        <div className="card-body space-y-2">
-          <h2 className="card-title text-xl md:text-2xl">{data.title}</h2>
-          <p className="text-base text-justify md:text-lg">
+      <div className="card md:w-md border border-zinc-300" key={data.id}>
+        <div className="card-body">
+          <div className="size-6 lg:size-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill={"currentColor"} d={data.svgLink}></path>
+            </svg>
+          </div>
+          <h2 className="card-title text-xl lg:text-2xl">{data.title}</h2>
+          <p className="text-base text-justify lg:text-lg">
             {data.description}
           </p>
         </div>
