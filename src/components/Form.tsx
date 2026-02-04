@@ -1,3 +1,5 @@
+import formData from "../data.json";
+
 function Form() {
   return (
     <section className="max-w-screen">
@@ -44,27 +46,28 @@ function Form() {
           <div className="w-full md:w-lg lg:h-105 flex flex-col justify-center lg:justify-between items-center lg:pl-8 text-center font-montserrat">
             <div className="space-y-6">
               <h3 className="font-medium text-lg lg:text-xl">
-                MARCI METZGER – THE RIDGE REALTY GROUP
+                {formData.formSection.name}
               </h3>
               <h4 className="text-base lg:text-lg">
-                3190 HW-160, Suite F, Pahrump, Nevada 89048, United States
+                {formData.formSection.address}
               </h4>
               <a
                 className="text-gray-500 text-sm lg:text-base"
-                href="tel: (206) 919-6886"
+                href={formData.formSection.contactLink}
               >
-                (206) 919-6886
+                {formData.formSection.contactText}
               </a>
             </div>
             <div className="space-y-6">
-              <h5 className="font-medium text-lg lg:text-xl">OFFICE HOURS</h5>
+              <h5 className="font-medium text-lg lg:text-xl">
+                {formData.formSection.officeHours}
+              </h5>
               <div className="flex flex-row gap-4 justify-center items-center text-base lg:text-lg">
-                <p>Open Daily</p>
-                <span>8:00 AM - 7:00 PM</span>
+                <p>{formData.formSection.scheduleTitle}</p>
+                <span>{formData.formSection.scheduleTime}</span>
               </div>
               <p className="text-sm lg:text-base">
-                Appointments outside office hours available upon request. Just
-                call!
+                {formData.formSection.appointmentText}
               </p>
             </div>
           </div>
