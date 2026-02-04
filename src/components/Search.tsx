@@ -1,8 +1,7 @@
-import imgSearch from "../assets/images/search/search-image.png";
 import searchData from "../data.json";
 
 function Search() {
-  const displayGrid = searchData.searchSection.map((data) => {
+  const displayGrid = searchData.searchSection.iconImg.map((data) => {
     return (
       <div className="flex flex-col justify-center items-center" key={data.id}>
         <img src={data.link} alt={data.alt} className="w-30 md:w-50" />
@@ -17,7 +16,7 @@ function Search() {
       <div className="w-full h-full relative flex justify-center">
         <img
           className="w-full h-full object-cover brightness-45"
-          src={imgSearch}
+          src={searchData.searchSection.imgBanner}
           alt="Image Banner"
         />
         <div className="absolute flex flex-col items-center justify-center px-4 py-6 lg:py-12">
