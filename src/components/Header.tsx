@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { useState } from "react";
-import logo from "../assets/images/icon/icon.png";
+import logo from "../assets/images/icon/icon.webp";
 import NavMenu from "./NavMenu";
 
 function Header() {
