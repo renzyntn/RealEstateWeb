@@ -26,6 +26,10 @@ function Hero() {
           className="w-full h-full object-cover brightness-45"
           src={heroData.heroSection.imgBanner}
           alt="Image Banner"
+          srcSet={`${heroData.heroSection.imgBanner}?w=640&f_auto&q_auto 640w, 
+                  ${heroData.heroSection.imgBanner}?w=1024&f_auto&q_auto 1024w, 
+                  ${heroData.heroSection.imgBanner}?w=1920&f_auto&q_auto 1920w`}
+          sizes="100vw"
         />
         <div className="absolute flex flex-col justify-center items-center px-4 space-y-6 text-white text-center">
           <h1 className="font-montserrat font-medium text-base md:text-lg">

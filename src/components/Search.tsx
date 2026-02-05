@@ -18,6 +18,10 @@ function Search() {
           className="w-full h-full object-cover brightness-45"
           src={searchData.searchSection.imgBanner}
           alt="Image Banner"
+          srcSet={`${searchData.searchSection.imgBanner}?w=640&f_auto&q_auto 640w,
+                  ${searchData.searchSection.imgBanner}?w=1024&f_auto&q_auto 1024w,
+                  ${searchData.searchSection.imgBanner}?w=1920&f_auto&q_auto 1920w`}
+          sizes="100vw"
         />
         <div className="absolute flex flex-col items-center justify-center px-4 py-6 lg:py-12">
           <div className="flex justify-center items-center mb-6">
