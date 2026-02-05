@@ -1,6 +1,6 @@
 {
   "heroSection": {
-    "imgBanner": "/images/banner/banner-image.png",
+    "imgBanner": "/images/banner/banner-image.webp",
     "name": "MARCI METZGER – THE RIDGE REALTY GROUP",
     "title": "Pahrump Realtor",
     "calltitle": "CALL NOW",
@@ -48,36 +48,36 @@
     ]
   },
   "aboutSection": {
-    "link": "/images/agent/agent-image.png",
+    "link": "/images/agent/agent-image.webp",
     "alt": "Marci Metzger Image",
     "name": "Marci Metzger",
     "title": "Real Estate Broker",
     "description": "I’m Marci Metzger, a real estate broker with over 30 years of experience. In 2021, me and my team helped nearly 90 clients close deals totaling $28.5 million. My focus is on providing expert guidance and making the real estate process seamless for every client. Whether buying or selling, I’m dedicated to delivering successful outcomes with personalized service."
   },
   "searchSection": {
-    "imgBanner": "/images/search/search-image.png",
+    "imgBanner": "/images/search/search-image.webp",
     "iconImg": [
       {
         "id": 1,
-        "link": "/images/search/3d-image1.png",
+        "link": "/images/search/3d-image1.webp",
         "alt": "Search Image 1",
         "title": "Search Available Properties"
       },
       {
         "id": 2,
-        "link": "/images/search/3d-image2.png",
+        "link": "/images/search/3d-image2.webp",
         "alt": "Search Image 2",
         "title": "Prime Locations Nearby"
       },
       {
         "id": 3,
-        "link": "/images/search/3d-image3.png",
+        "link": "/images/search/3d-image3.webp",
         "alt": "Search Image 3",
         "title": "Trusted Properties"
       },
       {
         "id": 4,
-        "link": "/images/search/3d-image4.png",
+        "link": "/images/search/3d-image4.webp",
         "alt": "Search Image 4",
         "title": "Best Market Prices"
       }
@@ -86,21 +86,21 @@
   "testimonialSection": [
     {
       "id": 1,
-      "link": "/images/achievement/achievement-image1.png",
+      "link": "/images/achievement/achievement-image1.webp",
       "alt": "Card Image 1",
       "title": "Top Residential Sales In The Last 5 Years",
       "description": "We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year."
     },
     {
       "id": 2,
-      "link": "/images/achievement/achievement-image2.png",
+      "link": "/images/achievement/achievement-image2.webp",
       "alt": "Card Image 2",
       "title": "Don't Just List It...",
       "description": "Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home."
     },
     {
       "id": 3,
-      "link": "/images/achievement/achievement-image3.png",
+      "link": "/images/achievement/achievement-image3.webp",
       "alt": "Card Image 3",
       "title": "Guide to Buyers",
       "description": "Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!"
@@ -109,59 +109,59 @@
   "carouselSection": [
     {
       "id": 1,
-      "link": "/images/carousel/carousel-image1.png",
+      "link": "/images/carousel/carousel-image1.webp",
       "alt": "Carousel Image 1"
     },
     {
       "id": 2,
-      "link": "/images/carousel/carousel-image2.png",
+      "link": "/images/carousel/carousel-image2.webp",
       "alt": "Carousel Image 2"
     },
     {
       "id": 3,
-      "link": "/images/carousel/carousel-image3.png",
+      "link": "/images/carousel/carousel-image3.webp",
       "alt": "Carousel Image 3"
     },
     {
       "id": 4,
-      "link": "/images/carousel/carousel-image4.png",
+      "link": "/images/carousel/carousel-image4.webp",
       "alt": "Carousel Image 4"
     },
     {
       "id": 5,
-      "link": "/images/carousel/carousel-image5.png",
+      "link": "/images/carousel/carousel-image5.webp",
       "alt": "Carousel Image 5"
     },
     {
       "id": 6,
-      "link": "/images/carousel/carousel-image6.png",
+      "link": "/images/carousel/carousel-image6.webp",
       "alt": "Carousel Image 6"
     },
     {
       "id": 7,
-      "link": "/images/carousel/carousel-image7.png",
+      "link": "/images/carousel/carousel-image7.webp",
       "alt": "Carousel Image 7"
     }
   ],
   "marqueeSection": [
     {
       "id": 1,
-      "link": "/images/partner/partner-image1.png",
+      "link": "/images/partner/partner-image1.webp",
       "alt": "Partner Image 1"
     },
     {
       "id": 2,
-      "link": "/images/partner/partner-image2.png",
+      "link": "/images/partner/partner-image2.webp",
       "alt": "Partner Image 2"
     },
     {
       "id": 3,
-      "link": "/images/partner/partner-image3.png",
+      "link": "/images/partner/partner-image3.webp",
       "alt": "Partner Image 3"
     },
     {
       "id": 4,
-      "link": "/images/partner/partner-image4.png",
+      "link": "/images/partner/partner-image4.webp",
       "alt": "Partner Image 4"
     }
   ],
