@@ -1,6 +1,6 @@
 {
   "heroSection": {
-    "imgBanner": "/images/banner/banner-image.webp",
+    "imgBanner": "https://res.cloudinary.com/dbdw18rvo/image/upload/v1770294521/banner-image_chumtk.webp",
     "name": "MARCI METZGER – THE RIDGE REALTY GROUP",
     "title": "Pahrump Realtor",
     "calltitle": "CALL NOW",
@@ -55,7 +55,7 @@
     "description": "I’m Marci Metzger, a real estate broker with over 30 years of experience. In 2021, me and my team helped nearly 90 clients close deals totaling $28.5 million. My focus is on providing expert guidance and making the real estate process seamless for every client. Whether buying or selling, I’m dedicated to delivering successful outcomes with personalized service."
   },
   "searchSection": {
-    "imgBanner": "/images/search/search-image.webp",
+    "imgBanner": "https://res.cloudinary.com/dbdw18rvo/image/upload/v1770294584/search-image_dzzcra.webp",
     "iconImg": [
       {
         "id": 1,
