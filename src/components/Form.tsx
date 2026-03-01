@@ -1,14 +1,15 @@
 import formData from "../data.json";
+import Location from "./Location";
 
 function Form() {
   return (
     <section className="max-w-screen">
-      <div className="lg:h-200 flex flex-col justify-center items-center px-4 py-6 lg:p-8">
+      <div className="flex flex-col justify-center items-center px-4 py-6 lg:p-8">
         <h2 className="font-cinzel font-light text-3xl md:text-4xl mb-6 lg:mb-12">
           GET IN TOUCH
         </h2>
         <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8">
-          <form className="w-full md:w-lg flex flex-col justify-center items-center gap-6 mb-6 lg:pr-8 font-montserrat">
+          <form className="w-full md:w-lg flex flex-col justify-center items-center gap-6 mb-6 lg:mb-0 lg:pr-8 font-montserrat">
             <fieldset className="fieldset w-full text-base">
               <legend className="fieldset-legend text-black">Name</legend>
               <input
@@ -43,32 +44,27 @@ function Form() {
               Submit
             </button>
           </form>
-          <div className="w-full md:w-lg lg:h-105 flex flex-col justify-center lg:justify-between items-center lg:pl-8 text-center font-montserrat">
-            <div className="space-y-6">
-              <h3 className="font-medium text-lg lg:text-xl">
+          <div className="w-full md:w-lg flex flex-col justify-center lg:justify-between items-center lg:pl-8 text-center font-montserrat">
+            <div className="space-y-4 lg:space-y-3">
+              <h3 className="font-medium text-lg">
                 {formData.formSection.name}
               </h3>
-              <h4 className="text-base lg:text-lg">
-                {formData.formSection.address}
-              </h4>
+              <h4 className="text-base">{formData.formSection.address}</h4>
               <a
-                className="text-gray-500 text-sm lg:text-base"
+                className="text-gray-500 text-sm"
                 href={formData.formSection.contactLink}
               >
                 {formData.formSection.contactText}
               </a>
-            </div>
-            <div className="space-y-6">
-              <h5 className="font-medium text-lg lg:text-xl">
+              <h5 className="font-medium text-lg mt-4 lg:mt-3">
                 {formData.formSection.officeHours}
               </h5>
-              <div className="flex flex-row gap-4 justify-center items-center text-base lg:text-lg">
+              <div className="flex flex-row gap-4 justify-center items-center text-base">
                 <p>{formData.formSection.scheduleTitle}</p>
                 <span>{formData.formSection.scheduleTime}</span>
               </div>
-              <p className="text-sm lg:text-base">
-                {formData.formSection.appointmentText}
-              </p>
+              <p className="text-sm">{formData.formSection.appointmentText}</p>
+              <Location />
             </div>
           </div>
         </div>
