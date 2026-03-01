@@ -6,7 +6,6 @@ import Partners from "../components/Partners";
 import Carousel from "../components/Carousel";
 import Services from "../components/Services";
 import Form from "../components/Form";
-import Location from "../components/Location";
 
 function Home() {
   return (
@@ -19,7 +18,6 @@ function Home() {
       <Partners />
       <Services />
       <Form />
-      <Location />
     </main>
   );
 }
