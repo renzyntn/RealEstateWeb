@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import heroData from "../data.json";
 import ClientCount from "./CountUp/ClientCount";
 import SalesCount from "./CountUp/SalesCount";
@@ -31,21 +32,28 @@ function Hero() {
                   ${heroData.heroSection.imgBanner}?w=1920&f_auto&q_auto 1920w`}
           sizes="100vw"
         />
-        <div className="absolute flex flex-col justify-center items-center px-4 space-y-6 text-white text-center">
+        <motion.div
+          className="absolute flex flex-col justify-center items-center px-4 space-y-6 text-white text-center"
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h1 className="font-montserrat font-medium text-base md:text-lg">
             {heroData.heroSection.name}
           </h1>
           <h2 className="font-cinzel font-light text-4xl">
             {heroData.heroSection.title}
           </h2>
-          <a
+          <motion.a
             className="w-full h-10 flex justify-center items-center bg-white rounded-full font-montserrat text-black"
             href={heroData.heroSection.calllink}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1 }}
           >
             <span className="font-medium text-base md:text-lg">
               {heroData.heroSection.calltitle}
             </span>
-          </a>
+          </motion.a>
           <div className="w-full grid grid-cols-2 justify-center items-center font-cinzel text-center">
             <div className="stat p-0 md:gap-2">
               <p className="stat-title text-white text-lg md:text-2xl">
@@ -73,7 +81,7 @@ function Hero() {
           <p className="font-cinzel font-medium text-xl">
             {heroData.heroSection.calltext}
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

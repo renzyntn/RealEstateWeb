@@ -1,10 +1,17 @@
+import { motion } from "motion/react";
 import formData from "../data.json";
 import Location from "./Location";
 
 function Form() {
   return (
     <section className="max-w-screen">
-      <div className="flex flex-col justify-center items-center px-4 py-6 lg:p-8">
+      <motion.div
+        className="flex flex-col justify-center items-center px-4 py-6 lg:p-8"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <h2 className="font-cinzel font-light text-3xl md:text-4xl mb-6 lg:mb-12">
           GET IN TOUCH
         </h2>
@@ -37,12 +44,14 @@ function Form() {
                 placeholder="Write something..."
               ></textarea>
             </fieldset>
-            <button
+            <motion.button
               className="btn btn-md lg:btn-lg rounded-full border-none bg-black text-white font-light"
               type="submit"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
             >
               Submit
-            </button>
+            </motion.button>
           </form>
           <div className="w-full md:w-lg flex flex-col justify-center lg:justify-between items-center lg:pl-8 text-center font-montserrat">
             <div className="space-y-4 lg:space-y-3">
@@ -68,7 +77,7 @@ function Form() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import searchData from "../data.json";
 
 function Search() {
@@ -23,7 +24,13 @@ function Search() {
                   ${searchData.searchSection.imgBanner}?w=1920&f_auto&q_auto 1920w`}
           sizes="100vw"
         />
-        <div className="absolute flex flex-col items-center justify-center px-4 py-6 lg:py-12">
+        <motion.div
+          className="absolute flex flex-col items-center justify-center px-4 py-6 lg:py-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="flex justify-center items-center mb-6">
             <h2 className="text-center font-cinzel font-light text-white text-3xl md:text-4xl">
               FIND YOUR DREAM HOME
@@ -53,14 +60,24 @@ function Search() {
                 className="text-black font-sans"
               />
             </label>
-            <button className="btn btn-md lg:btn-lg rounded-full border-none bg-black text-white font-light">
+            <motion.button
+              className="btn btn-md lg:btn-lg rounded-full border-none bg-black text-white font-light"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
+            >
               Search
-            </button>
+            </motion.button>
           </div>
-        </div>
-        <div className="absolute w-full grid grid-cols-2 justify-items-center bottom-0 px-4 py-6 lg:py-16 gap-2 text-center">
+        </motion.div>
+        <motion.div
+          className="absolute w-full grid grid-cols-2 justify-items-center bottom-0 px-4 py-6 lg:py-16 gap-2 text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           {displayGrid}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
